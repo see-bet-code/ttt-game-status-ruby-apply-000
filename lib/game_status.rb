@@ -16,5 +16,5 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.select{|win| win == "X" || win == "O"}
+  WIN_COMBINATIONS.select{|win| win.all?("X") || win.all?("O")}
 end
