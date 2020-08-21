@@ -21,7 +21,7 @@ def won?(board)
   if win.length == 0
     return false
   else
-    return win.first
+    return *win
   end
 end
 
