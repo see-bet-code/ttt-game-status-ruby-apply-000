@@ -38,6 +38,6 @@ def winner(board)
   if index == nil
     nil
   else
-    board[index]
+    board[index.first]
   end
 end
