@@ -34,6 +34,10 @@ def over?(board)
 end
 
 def winner(board)
-  index = won?(board).first
-  board[index]
+  index = won?(board)
+  if index == nil
+    nil
+  else
+    board[index]
+  end
 end
