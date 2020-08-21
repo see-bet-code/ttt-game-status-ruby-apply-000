@@ -22,6 +22,7 @@ def won?(board)
 end
 
 def full?(board)
+  board.any?(" ")
 end
 
 def draw?(board)
