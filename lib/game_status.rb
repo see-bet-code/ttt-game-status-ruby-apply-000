@@ -18,11 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   win = WIN_COMBINATIONS.select{|win|
     board.values_at(*win).all?("X") || board.values_at(*win).all?("O")}
-  if win.length == 0
-    return false
-  else
-    return win.first
-  end
+  return win.first
 end
 
 def full?(board)
